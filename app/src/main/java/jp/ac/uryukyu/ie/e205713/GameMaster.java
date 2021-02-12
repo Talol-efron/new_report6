@@ -5,18 +5,14 @@ public class GameMaster {
         Chairperson teacher = new Chairperson();
         teacher.explain();
 
+        System.out.println("あなたが思うcomputerの数字を入力してください。");
+        Pleyar you = new Pleyar("you");
+        you.scan();
+
         Computer talol = new Computer();
         talol.ran();
+        System.out.println(talol.getNum());
 
-        //computerがランダムに選んだ数字をprint
-        //System.out.println(talol.getNum());
         
-        //Player you = new Player("you");
-        //teacher.start();
-
-        teacher.userPlay();
-        teacher.userJudg();
-        //teacher.cpPlay();
-        //teacher.cpJudg();
     }
 }

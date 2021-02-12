@@ -17,4 +17,11 @@ public class Player {
         return name;
     }
 
+    Scan value = new Scan();
+
+    public void Generate(){
+        System.out.println("あなたが考えるcomputerの数字を入力してください");
+        waitMoment(1000);
+        value.scan();
+    }
 }
