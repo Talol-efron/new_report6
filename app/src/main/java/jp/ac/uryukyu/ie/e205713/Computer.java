@@ -8,7 +8,7 @@ public class Computer {
 
     public void ran(){
         Random rand = new Random();
-        num = rand.nextInt(100);
+        num = rand.nextInt(90) + 10;
         //computerがランダムで生成した2桁の数字をprint
         System.out.println(num);
 
@@ -16,6 +16,14 @@ public class Computer {
 
     public int getNum() {
         return num;
+    }
+
+    public int cpTens(){
+        return num / 10;
+    }
+
+    public int cpOnes() {
+        return num % 10;
     }
      
 }
