@@ -15,8 +15,7 @@ public class GameMaster {
         
         you.scan();    
         talol.ran();
-
-        
+ 
         while(kusa == false){
             if (you.playerTens() == talol.cpTens() && you.playerOnes() == talol.cpOnes()) {
                 // ゲームクリア
@@ -50,13 +49,13 @@ public class GameMaster {
                 }
             }
         }
-        
     }
     
 
     
 
     /**
+     * timeに数値を入力することによって、その数値分、時間を開けて処理を行うことができる。
      * @param time int型の時間を入力
      */
     public void waitMoment(int time) {
